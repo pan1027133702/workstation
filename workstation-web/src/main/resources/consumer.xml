@@ -5,7 +5,7 @@
 
     <dubbo:application name="dubbo-spring-consumer"/>
 
-    <dubbo:reference id="userService" interface="com.xian.service.UserService" retries="3" check="false" url="dubbo://127.0.0.1:8888"/>
+    <dubbo:reference id="userService" interface="com.hangzhou.service.UserService" retries="3" check="false" url="dubbo://127.0.0.1:8888"/>
 
     <bean class="com.hangzhou.controller.UserController">
         <property name="userService" ref="userService"/>

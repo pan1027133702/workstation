@@ -7,7 +7,7 @@
     <dubbo:application name="dubbo-spring-provider"/>
 
     <!-- 指定注册中心 zookeeper 的地址 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://101.43.37.149:2181"/>
 
     <!-- 协议和开放的访问端口-->
     <dubbo:protocol name="dubbo" port="8888"/>
