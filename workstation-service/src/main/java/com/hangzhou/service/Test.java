@@ -1,4 +1,4 @@
-package com.hangzhou.service.impl;
+package com.hangzhou.service;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

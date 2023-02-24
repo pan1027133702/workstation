@@ -1,5 +1,6 @@
-package com.hangzhou.controller;
+package com.hangzhou;
 
+import com.hangzhou.controller.UserController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

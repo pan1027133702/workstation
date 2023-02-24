@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
     <!-- 配置应用程序的名称，一般使用项目名 -->
-    <dubbo:application name="dubbo-spring-provider"/>
+    <dubbo:application name="workstation-service"/>
 
     <!-- 指定注册中心 zookeeper 的地址 -->
-    <dubbo:registry address="zookeeper://101.43.37.149:2181"/>
+    <dubbo:registry address="zookeeper://192.168.99.51:2183?backup=192.168.99.37:2183,192.168.1.109:2183"/>
 
     <!-- 协议和开放的访问端口-->
-    <dubbo:protocol name="dubbo" port="8888"/>
+    <dubbo:protocol name="dubbo" port="8988"/>
 
     <!-- 配置要暴露的端口-->
     <dubbo:service interface="com.hangzhou.service.UserService" ref="userService"/>
